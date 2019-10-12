@@ -2,8 +2,10 @@
 # Set default behavior to automatically normalize line endings.
 ###############################################################################
 * text=auto
-* linguist-vendored
-*.css linguist-vendored=false
+#* linguist-vendored
+#*.css linguist-vendored=false
+*.html linguist-detectable=false
+*.css linguist-detectable=false
 #*.css linguist-language=.cs
 
 ###############################################################################
