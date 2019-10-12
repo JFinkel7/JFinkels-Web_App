@@ -1,0 +1,110 @@
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@model IEnumerable<Login_App.Models.Users>
+<!--Imports The Identity Library & Inject SignInManger-->
+@using Microsoft.AspNetCore.Identity;
+@inject SignInManager<IdentityUser> _signInManager;
+<DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="content-type" content="text/html" />
+        <meta name="keywords" content="Home Page" />
+        <meta name="description" content="Main Home Page" />
+        <meta name="Developer" content="Denis J Finkel" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="~/Home/Index/Style/css/style.css">
+        <!--Icon library-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Home</title>
+    </head>
+    <body>
+        <!--MAIN-->
+        <main>
+            <section class="img-1">
+                <div class="header-container">
+                    <div class="border">
+                        <div class="nav">
+                            <header>
+                                <nav>
+                                    <!--Navigation Menu-->
+                                    @{if (_signInManager.IsSignedIn(User)) {
+                                            <form method="post" asp-action="Logout" asp-controller="Account">
+                                                <button id="log-out-button" type="submit">
+                                                    Logout @User.Identity.Name
+                                                </button>
+                                            </form>
+                                        } else {
+                                            <span>
+                                                <span class="registration-links"><a asp-action="Registration" asp-controller="Account">Register</a></span>
+                                                <span class="registration-links"><a asp-action="Login" asp-controller="Account">Login</a></span>
+                                            </span>
+                                        }
+                                    }
+                                    <span class="nav-links"><a href="#">About Me</a></span>
+                                    <span class="nav-links"><a href="#">My Story</a></span>
+                                    <span class="nav-links"><a href="#">How I Started</a></span>
+                                    <span class="nav-links"><a href="#">My Info</a></span>
+
+                                </nav>
+                            </header>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr />
+            <!--END OF HEADER-->
+            <section class="section section-dark">
+                <h1>
+                    <span id="quote">"Opertunities Dont Happen<br />We Create Them"</span>
+                </h1>
+
+            </section>
+
+            <section class="img-2">
+                <div class="ptext">
+                    <div class="border">
+                        <h5>
+                            <span>
+                                my dream
+                            </span>
+                        </h5>
+
+                    </div>
+                </div>
+            </section>
+            <section class="section section-dark">
+                <h2>BEGIN</h2>
+                <p>Forever</p>
+            </section>
+
+            <section class="img-3">
+                <div class="ptext">
+                    <div class="border">
+                        <h5>
+                            <span>
+                                my pashion
+                            </span>
+                        </h5>
+
+                    </div>
+                </div>
+            </section>
+            <section class="section section-dark">
+                <h2>AGAIN</h2>
+                <p>Forever</p>
+            </section>
+            <section class="img-3">
+                <div class="ptext">
+                    <div class="border">
+                        <div>
+                            <h5>
+                                <span>my life</span>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--END OF MAIN-->
+        </main>
+    </body>
+</html>

@@ -1,0 +1,113 @@
+/* SCSS Styles */
+/*<!-- Info:
+       0 Being The Lightest and >  Being The Darkest
+       4 color Tag Categories :
+       Dark , Light, Bright , White, Black
+-->*/
+body {
+  box-sizing: content-box;
+  overflow-x: hidden;
+  margin: auto;
+  background-image: url("../css/img/Backgrounds/Home_Mountain.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 400;
+  color: #00BFFF;
+}
+
+main {
+  margin: 15px;
+}
+main hr {
+  border: none;
+}
+main #quote {
+  color: #66ffff;
+  font-size: 25px;
+  font-family: Apple Chancery;
+  font-style: italic;
+}
+main .nav {
+  padding: 25px;
+  background-color: #000000;
+  color: #00FFFF;
+  border: 6px ridge white;
+  margin: 0;
+  position: relative;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+main .nav .registration-links {
+  float: right;
+}
+main .nav a {
+  overflow: hidden;
+  text-decoration: none;
+  padding: 30px;
+  color: #00FFFF;
+  font-size: 25px;
+}
+main .nav a:hover {
+  color: beige;
+  background-color: #282828;
+}
+main .img-1, main .img-2, main .img-3 {
+  position: relative;
+  opacity: 0.7;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+main .img-1 {
+  background-image: url("../css/img/Backgrounds/Home_Mountain.jpg");
+  min-height: 100%;
+}
+main .img-2 {
+  background-image: url("../css/img/Backgrounds/Home_Mountain.jpg");
+  min-height: 400px;
+}
+main .img-3 {
+  background-image: url("../css/img/Backgrounds/Home_Mountain.jpg");
+  min-height: 400px;
+}
+main .section {
+  text-align: center;
+  padding: 50px 80px;
+}
+main .section-light {
+  background-color: #f4f4f4;
+  color: #666;
+}
+main .section-dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+main .ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 25px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+main .ptext .border {
+  padding: 20px;
+}
+main .ptxt .border.trans {
+  background-color: transparent;
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

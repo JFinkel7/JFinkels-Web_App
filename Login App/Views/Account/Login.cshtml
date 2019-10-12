@@ -1,0 +1,53 @@
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@model Login_App.ViewModels.LoginViewModel
+<DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="content-type" content="text/html" />
+        <meta name="keywords" content="Login Page" />
+        <meta name="description" content="Login Page" />
+        <meta name="Developer" content="Denis J Finkel" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="~/Account/Login/Style/css/style.css">
+        <!--Icon library-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Login</title>
+    </head>
+    <body>
+        <header>
+            <h1></h1>
+        </header>
+        <main>
+            <section id="form-layout">
+                <form id="form-container" method="post">
+                    <div id="validation-summary" asp-validation-summary="All"></div>
+                    <div>
+                        <label class="label" asp-for="Email"></label>
+                        <span class="input-form-validation" asp-validation-for="Email"></span>
+                        <input class="input-box" asp-for="Email" />
+
+                    </div>
+                    <div>
+                        <label class="label" asp-for="Password"></label>
+                        <span class="input-form-validation" asp-validation-for="Password"></span>
+                        <input class="input-box" asp-for="Password" />
+
+                    </div>
+                    <div>
+                        <label class="label" asp-for="RememberMe"></label>
+                        <span class="input-form-validation" asp-validation-for="RememberMe"></span>
+                        <input class="input-box" asp-for="RememberMe" />
+                    </div>
+                    <button id="button-login" type="submit">Login</button>
+                    @Html.AntiForgeryToken()
+                </form>
+            </section>
+            <div>
+                <a id="home-link" asp-controller="Home" asp-action="Index">Back Home</a><br />
+            </div>
+        </main>
+    </body>
+</html>
+
+

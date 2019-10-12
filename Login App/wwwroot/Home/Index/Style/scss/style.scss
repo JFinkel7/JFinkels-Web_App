@@ -1,0 +1,133 @@
+﻿/* SCSS Styles */
+@import '_Mixins.scss';
+@import '_Colors.scss';
+
+body {
+    box-sizing: content-box;
+    overflow-x: hidden;
+    margin: auto;
+    // BACKGROUND IMAGE CONFIG
+    background-image: url("../css/img/Backgrounds/Home_Mountain.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    //
+    //line-height: 1.2em;
+    font-family: "Gill Sans", sans-serif;
+    font-weight: 400;
+    color: #00BFFF
+}
+
+// Start of Nav
+main {
+    hr{border:none;}
+    margin: 15px;
+
+    #quote {
+        color:lighten($Aqua,20%);
+        font-size:25px;
+        font-family: Apple Chancery;
+        font-style: italic;
+    }
+    // Start of Nav
+    .nav {
+        padding: 25px;
+        background-color: $Black;
+        color: $Aqua;
+        border: 6px ridge white;
+        margin: 0;
+        position: relative;
+        text-align: center;
+        display: block;
+        width: 100%;
+
+        .registration-links {
+            float: right;
+        }
+
+        a {
+            overflow: hidden;
+            text-decoration: none;
+            padding: 30px;
+            color: $Aqua;
+            font-size: 25px;
+
+
+            &:hover {
+                color: beige;
+                background-color: #282828;
+            }
+        }
+    }
+    // End of nav
+    //Start of Paralax
+    .img-1, .img-2, .img-3 {
+        position: relative;
+        opacity: 0.70;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+
+
+    .img-1 {
+        background-image: url("../css/img/Backgrounds/Home_Mountain.jpg");
+        min-height: 100%;
+    }
+
+    .img-2 {
+        background-image: url("../css/img/Backgrounds/Home_Mountain.jpg");
+        min-height: 400px;
+    }
+
+    .img-3 {
+        background-image: url("../css/img/Backgrounds/Home_Mountain.jpg");
+        min-height: 400px;
+    }
+
+    .section {
+        text-align: center;
+        padding: 50px 80px;
+    }
+
+    .section-light {
+        background-color: #f4f4f4;
+        color: #666;
+    }
+
+    .section-dark {
+        background-color: #282e34;
+        color: #ddd;
+    }
+
+    .ptext {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color: #000;
+        font-size: 25px;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+    }
+
+    .ptext .border {
+        //background-image:
+        padding: 20px
+    }
+
+    .ptxt .border.trans {
+        background-color: transparent;
+    }
+}
+//END OF MAIN
+// MEDIA Content
+@media(max-width:600px) {
+    body {
+        margin: 10px;
+        //padding:15px;
+    }
+}

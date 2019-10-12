@@ -1,0 +1,112 @@
+﻿/* SCSS Styles */
+@import '_Mixins.scss';
+@import '_Colors.scss';
+
+body {
+    @include configBody_Weight_Height;
+    box-sizing: content-box;
+    margin: auto;
+    padding: initial;
+    color: $Azure;
+    line-height: 1.2em;
+    // BACKGROUND IMAGE CONFIG
+    background-image: url("../css/img/Backgrounds/img_quote_bruce_lee.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+// HEADER
+header {
+    #title {
+        text-align: center;
+        margin: 15px;
+        padding: 5px;
+    }
+}
+
+// MAIN
+main {
+    #form-layout {
+        display: flex;
+        justify-content: center;
+
+        #form-container {
+            font-weight: 900;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 150px;
+            margin: 80px;
+        }
+    }
+
+    .label {
+        font-size: 22.5px;
+        color: $yellow_Beige;
+    }
+
+    .input-box {
+        width: 500px;
+        padding: 5px;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center;
+
+        &:hover {
+            border: $pink_Hot0 1px ridge;
+        }
+    }
+
+    #button-login {
+        background: transparent;
+        font-size: 25px;
+        border: transparent solid 1px;
+        color: $yellow_Khaki0;
+        margin-top: 50px;
+        height: 50px;
+        width: 500px;
+
+        &:hover {
+            color: $Amber;
+            border: $Silver solid 1px;
+        }
+    }
+
+    #validation-summary {
+        color: $yellow_Amber0;
+        position: relative;
+        margin: 0;
+        left: -25px;
+
+        &:hover {
+            color: $Azure;
+        }
+    }
+
+    .input-form-validation {
+        font-weight: 900;
+        position: relative;
+        float: right;
+        color: yellow;
+    }
+
+    #home-link {
+        font-size: 25px;
+        color: aliceblue;
+        background: transparent;
+        text-decoration: none;
+
+        &:hover {
+            border: transparent ridge 1px;
+            color: bisque;
+        }
+    }
+}
+//END OF MAIN
+
+// MEDIA Content
+@media(max-width:600px) {
+    body {
+        margin: 10px;
+        //padding:15px;
+    }
+}
