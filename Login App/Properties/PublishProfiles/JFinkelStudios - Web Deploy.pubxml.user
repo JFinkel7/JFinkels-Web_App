@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA8t4Pqr9tJECjn3LAuk6XigAAAAACAAAAAAAQZgAAAAEAACAAAAALcxfZbDkF9dtl4ZS9ONWiMRgUw5I6XtTuzeSvu8tW1QAAAAAOgAAAAAIAACAAAABApuZxSJeqUU/rOejy9hbDv770J590QO13BPPDlx/dOIAAAAAJLooPH2b5Sd5TWm3L13c4Qas/tXZHOZG0ChR21IAxLEjbTQPOjNvmp7ZlHYPafHC9Re0fKkR79G0WPxI4se3LHYUe68eI+9KH/pPvT6UJ80AeMfkXjJ3xErVCi/J1z2s38muLmd+QQg7TOdOE2lj76Buef4fzX2sdVCM5ZZE5WUAAAABvVnkyqlwKYUAiNPXA2QqWfRqRpKE2w8Z3ng2o5ycY0JbqhDXR+Hwn/gi6iZCtmy4FJo4ym1ndgxGY7wQyG9fa</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Server = tcp:solace.database.windows.net,1433%3bInitial Catalog=CustomerInformation%3bPersist Security Info=False%3bUser ID=CustomerInformation%3bPassword=7Death%24%24Stroke007%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>
