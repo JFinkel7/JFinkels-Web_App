@@ -23,9 +23,9 @@ namespace Login_App {
         }
         public void ConfigureServices(IServiceCollection services) {
             services.AddMvc().SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_2_2);
-            /* Connects To SQL_Server ↓ */
+            /* Connects To Azure SQL Server ↓ */
             services.AddDbContextPool<UserDB_Context>(
-                options => options.UseSqlServer(_config.GetConnectionString("Default"))
+                options => options.UseSqlServer(_config["DefaultConnection"])
             );
             services.AddTransient<IUser, UserRepository>();
             /* Adds Identity ↓ */
@@ -35,8 +35,8 @@ namespace Login_App {
 
             /* Adds Asp.NetCore Identity Options */
             services.Configure<IdentityOptions>(options => {
-                options.Password.RequiredLength = 10;
-                options.Password.RequiredUniqueChars = 3;
+                options.Password.RequiredLength = 6;
+                options.Password.RequiredUniqueChars = 1;
                 options.Password.RequireNonAlphanumeric = false;
 
             });
@@ -46,11 +46,6 @@ namespace Login_App {
         public void Configure(IApplicationBuilder app, IHostingEnvironment env) {
             /* [Enables] Static Content Files (wwwroot) */
             app.UseStaticFiles();
-            if (env.IsDevelopment()) {
-                app.UseDeveloperExceptionPage();
-                //* [Enables] SQL & Microsoft.EntityFrameworkCore Debugging *
-                app.UseDatabaseErrorPage();
-            }
             /* [Enables] Authenticaion */
             app.UseAuthentication();
             app.UseMvc(route => {
