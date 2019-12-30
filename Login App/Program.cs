@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration.AzureKeyVault;
 //
 namespace Login_App {
     public class Program {
-        private static string GetKeyVaultEndpoint() => "https://vaultcustomerinformation.vault.azure.net";
+        private static string GetKeyVaultEndpoint() => "https://users-key.vault.azure.net/";
         public static void Main(string[] args) {
             BuildWebHost(args).Run();
         }
