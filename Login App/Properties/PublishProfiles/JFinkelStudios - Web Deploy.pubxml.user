@@ -6,11 +6,6 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA8t4Pqr9tJECjn3LAuk6XigAAAAACAAAAAAAQZgAAAAEAACAAAAALcxfZbDkF9dtl4ZS9ONWiMRgUw5I6XtTuzeSvu8tW1QAAAAAOgAAAAAIAACAAAABApuZxSJeqUU/rOejy9hbDv770J590QO13BPPDlx/dOIAAAAAJLooPH2b5Sd5TWm3L13c4Qas/tXZHOZG0ChR21IAxLEjbTQPOjNvmp7ZlHYPafHC9Re0fKkR79G0WPxI4se3LHYUe68eI+9KH/pPvT6UJ80AeMfkXjJ3xErVCi/J1z2s38muLmd+QQg7TOdOE2lj76Buef4fzX2sdVCM5ZZE5WUAAAABvVnkyqlwKYUAiNPXA2QqWfRqRpKE2w8Z3ng2o5ycY0JbqhDXR+Hwn/gi6iZCtmy4FJo4ym1ndgxGY7wQyG9fa</EncryptedPassword>
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA8t4Pqr9tJECjn3LAuk6XigAAAAACAAAAAAAQZgAAAAEAACAAAADkysQMKijxVsXkeistGZbRuG8FmQa2GJn6aAl7H1O5/QAAAAAOgAAAAAIAACAAAABGVFDVgYMB4xFjdj6tqlQ6spshfjnVGXZs80gnSxX914AAAACa0o4ReqyM5R8YT8sgWTV2DQNFqCIxDsJ9tvS+6vjNuHwcmXIY2a7n8pHj7j8VMTQWxyvyOydR2wOi3vRxs/FKZ8aHpn1gFMXjwOzk7bEvAt7GNYkZw/yrftqwgKJSPuE/LJz4C7d7oFuIM4uUasCHtFjFlB7T2Y6NEvlVPyl/50AAAAB/zN8o5nRGMWqxOD0fHeh3vZl8J7gxIjyhdHYzT3URnDURlmY1IAJJlZvPoRhlyi/JVg9sls3rzdnfex+tQxYi</EncryptedPassword>
   </PropertyGroup>
-  <ItemGroup>
-    <DestinationConnectionStrings Include="DefaultConnection">
-      <Value>Server = tcp:solace.database.windows.net,1433%3bInitial Catalog=CustomerInformation%3bPersist Security Info=False%3bUser ID=CustomerInformation%3bPassword=7Death%24%24Stroke007%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
-    </DestinationConnectionStrings>
-  </ItemGroup>
 </Project>
