@@ -18,5 +18,27 @@ namespace Login_App.Controllers.Home {
 
         }
 
-    }
+      
+        [HttpGet]
+        public IActionResult About() {
+            return View();
+
+        }
+
+        
+        [HttpGet]
+        public IActionResult HowIStarted() {
+            return View();
+
+        }
+
+        
+        [HttpGet]
+        public IActionResult Resume() {
+            return View();
+
+        }
+
+    
+    }// END OF CLASS
 }
