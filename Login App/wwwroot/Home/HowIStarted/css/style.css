@@ -1,0 +1,123 @@
+/* SCSS Styles */
+@-moz-keyframes slide-straight-right {
+  0% {
+    transform: skew(53deg) translateX(100%);
+  }
+  100% {
+    transform: skew(0deg);
+  }
+}
+@-webkit-keyframes slide-straight-right {
+  0% {
+    transform: skew(53deg) translateX(100%);
+  }
+  100% {
+    transform: skew(0deg);
+  }
+}
+/*<!-- Info:
+       0 Being The Lightest and >  Being The Darkest
+       4 color Tag Categories :
+       Dark , Light, Bright , White, Black
+-->*/
+body {
+  max-width: 1200px;
+  min-width: 600px;
+  max-height: 900px;
+  min-height: 450px;
+  margin: auto;
+}
+
+header #header-container {
+  background: linear-gradient(to bottom right, #222021, #404040);
+  border-top: #7E191B groove 2px;
+  outline: none;
+}
+header #header-container #header-title {
+  text-align: center;
+  font-family: "Times New Roman";
+  font-size: 35px;
+  letter-spacing: 2px;
+  font-style: italic;
+  font-weight: 900;
+  color: #FFFAFA;
+}
+header #header-container #home-link {
+  text-align: left;
+  text-decoration: none;
+  font-size: 20px;
+  color: #f0ffff;
+}
+header #header-container #home-link:hover {
+  color: beige;
+  background-color: transparent;
+}
+
+main .container {
+  border: 5px ridge #404040;
+  background: linear-gradient(to bottom right, #575154, #404040);
+  padding: 5px;
+  margin: 15px;
+  color: azure;
+  font-family: Arial;
+  font-size: 21px;
+  text-rendering: auto;
+  -webkit-animation: slide-straight-left;
+  -webkit-animation-duration: 4s;
+  -moz-animation-name: slide-straight-left;
+  -moz-animation-duration: 4s;
+}
+@-moz-keyframes slide-straight-left {
+  0% {
+    transform: skew(53deg) translateX(-100%);
+  }
+  100% {
+    transform: skew(0deg);
+  }
+}
+@-webkit-keyframes slide-straight-left {
+  0% {
+    transform: skew(53deg) translateX(-100%);
+  }
+  100% {
+    transform: skew(0deg);
+  }
+}
+main .container #chapter_1-paragraph {
+  text-align: center;
+}
+main .container #chapter_1-paragraph:hover {
+  animation: move-letters 2s ease-in-out;
+  animation-delay: 2s;
+}
+@keyframes move-letters {
+  0% {
+    letter-spacing: 2px;
+  }
+}
+main .container #chapter_2-paragraph {
+  text-align: center;
+}
+main .container #chapter_2-paragraph:hover {
+  animation: move-letters 2s ease-in-out;
+  animation-delay: 2s;
+}
+@keyframes move-letters {
+  0% {
+    letter-spacing: 2px;
+  }
+}
+main .container #chapter_3-paragraph {
+  text-align: center;
+}
+main .container #chapter_3-paragraph:hover {
+  animation: move-letters 2s ease-in-out;
+  animation-delay: 2s;
+}
+@keyframes move-letters {
+  0% {
+    letter-spacing: 2px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

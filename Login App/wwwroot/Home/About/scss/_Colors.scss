@@ -1,0 +1,486 @@
+﻿// * Colors *
+/*<!-- Info:
+       0 Being The Lightest and >  Being The Darkest
+       4 color Tag Categories :
+       Dark , Light, Bright , White, Black
+-->*/
+//<resources>
+//<!-- Chosen Primaries -->
+$colorPrimary: #008577;
+$colorPrimaryDark: #000000;
+$colorAccent: #D81B60;
+
+//<!-- Black -->
+$Black: #000000;
+$blackish2: #080808;
+$blackish1: #101010;
+$blackish0: #181818;
+$black_Coal1: #202020;
+$black_Charcoal: #222021;
+$black_Coal0: #282828;
+$black_Grey3: #303030;
+$black_Shadow: #363636;
+$black_ShadowLight: #383838;
+$black_Grey1: #404040;
+$black_Grey0: #484848;
+$grey_Iron: #48494B;
+$black_Smoke3: #505050;
+$black_Smoke2: #585858;
+$black_Smoke1: #606060;
+$black_Smoke0: #686868;
+$black_SmokeGrey1: #696969;
+$black_SmokeGrey2: #707070;
+$black_SmokeGrey3: #787878;
+$Gray: #808080;
+$gray_Light: #828282;
+$grey_Steel: #777B7E;
+$grey_Lava: #808588;
+$grey_Pewter: #999DA0;
+$Silver: #C0C0C0;
+$gray_Bright: #D3D3D3;
+
+//<!-- White -->
+$Pearl_River: #D9DDDC;
+$Azure: #f0ffff;
+$White: #FFFFFF;
+$GhostWhite: #f8f8ff;
+$Snow: #FFFAFA;
+$Diamond: #F1F7FB;
+$Quartz: #D9D9F3;
+$WhiteBlue: #CCCCFF;
+
+//<!-- Blue - Light -->
+$blue_CyanWhite: #E0FFFF;
+$blue_TealLight: #9AC5DB;
+$blue_Sky: #95C8D8;
+$blue_CyanPrimary: #00B7EB;
+$blue_Maya: #73C2FB;
+$blue_Powder: #B0DFE5;
+$blue_Celeste: #B2FFFF;
+$blue_AquamarineLight: #95e0e8;
+$blue_Baby: #89CFF0;
+$blue_TurquoiseDim: #81D8D0;
+$blue_Electric0: #7EF9FF;
+$blue_Electric1: #7DF9FF;
+$blue_TurquoiseLight: #6CDAE7;
+$blue_Aqua: #00FFFF;
+$blue_Turquoise: #3FE0D0;
+$blue_SeaGreenLight: #20B2AA;
+$blue_Eucalyptus: #44d7a8;
+$blue_Aquamarine: #7FFFD4;
+$blue_Keppel: #3AB09E;
+$blue_CyanLight: #06A396;
+$blue_CyanDark: #008B8B;
+$blue_Teal: #008081;
+$blue_CyanCaribbean: #006D6F;
+$blue_MidnightGreen: #004953;
+$blue_SaturatedLight1: #363E53;
+$blue_Independence: #4C516D;
+$blue_SaturatedLight0: #46506B;
+$blue_NavyDeSaturated: #3D5069;
+$blue_Pigeon: #7285A5;
+$blue_NavySaturated: #2A3c58;
+$blue_Prussian: #003152;
+$blue_Yale: #0E4D92;
+$blue_Sapphire: #0F52BA;
+$blue_Azure: #0080FF;
+$blue_Steel: #4682B4;
+$blue_AirForce: #588BAE;
+
+//<!-- Blue - Dark -->
+$blue_Cornflower: #6593F5;
+$blue_Corolina: #57A0D3;
+$blue_Olympic: #008ECC;
+$blue_Turkish: #4F97A3;
+$blue_CeruleanBright: #0D98BA;
+$blue_Cerulean: #007BA7;
+$blue_CeruleanDark: #1164B4;
+$blue_Ocean: #2B65EC;
+$blue_Indigo: #4F69C6;
+$blue_Midnight: #00468C;
+$blue_Ultramarine: #3F26BF;
+$blue_Medium: #3232CC;
+$Blue: #3300FF;
+$blue_Egyptian: #1034A6;
+$blue_Navy: #000080;
+$blue_NavyDark: #000066;
+$blue_Royal: #111E6C;
+$blue_DeepLight: #00004c;
+$blue_Space: #1D2951;
+$blue_DeepDark: #000033;
+$blue_NavyPureDark: #192943;
+$blue_SaturatedDark: #272C3B;
+$blue_Blackish: #1F232F;
+$blue_Black: #171B24;
+$blue_PureBlack: #0F1218;
+
+//<!-- Purple -->
+$purple_PureDark: #291E29;
+$purple_Dark1: #301934;
+$purple_Dark2: #341731;
+$purple_DarkLight: #481F3D;
+$purple_Pansy: #78184A;
+$purple_RootDark: #7D1955;
+$purple_PalatinateLight1: #732A57;
+$purple_Palatinate: #682860;
+$purple_Byzantium: #702963;
+$purple_PalatinateLight2: #730C75;
+$purple_Root: #800080;
+$purple_MardiGras: #880085;
+$purple_DarkMagenta: #8B008B;
+$purple_Eminence: #6C3082;
+$purple_Purpureus: #9A4EAE;
+$purple_Piz: #FE4EDA;
+$purple_MediumOrchid: #BA55D3;
+$purple_Orchid: #DA70D6;
+$purple_Liseran: #DE6FA1;
+$pink_PaleVioletRed: #DB7093;
+$purple_Pearly: #B768A2;
+$purple_Violet: #ee82ee;
+$purple_Heliotrope: #DF73FF;
+$purple_Mulberry: #C54B8C;
+$purple_Munsell: #9F00C5;
+$purple_Fuchsia: #FF00FF;
+$purple_Electric: #BF00FF;
+$purple_Magenta: #FF00FF;
+$purple_Phlox: #DF00FF;
+$purple_DarkViolet: #9400D3;
+$purple_DarkOrchid: #9932CC;
+$Purple: #A020F0;
+$purple_BlueViolet: #8A2BE2;
+$purple_NorthwesternBright: #6504C2;
+$purple_Northwestern: #4E2A84;
+$purple_KSU: #512888;
+$purple_Indigo: #4B0082;
+$purple_IndigoDark: #463168;
+$purple_IndigoSaturated: #523F6E;
+$purple_Royal: #7851A9;
+$purple_Medium: #9370DB;
+$purple_periwinkle: #AAAAFF;
+$purple_LightPastel: #B19CD9;
+$purple_PompPowerDark: #74608E;
+$purple_PompPower: #86608E;
+$purple_Plum: #dda0dd;
+$purple_Maueve: #E0B0FF;
+$purple_Thistle: #D8BFd8;
+$purple_Lavender: #E6E6FA;
+$purple_Pale: #FAE6FA;
+
+//<!-- Pink -->
+$pink_White0: #FFF0F7;
+$pink_White1: #FFE1F0;
+$pink_Pale: #FFD2E8;
+$pink_PaleDark: #FFC3E1;
+$Pink: #FFC0CB;
+$pink_Light: #FFB6C1;
+$pink_PaleDarker0: #FFB4D9;
+$pink_PaleDarker1: #FFA5D2;
+$pink_PaleDarker2: #FF96cA;
+$pink_PaleDarker3: #FF87C3;
+$pink_Hot0: #FF78BB;
+$pink_Hot1: #ff69b4;
+$pink_Hot2: #E55EA2;
+$pink_Hot3: #CC5490;
+$pink_HotSaturated: #B2497D;
+$pink_DeepPink: #ff1493;
+$pink_MediumVioletRed: #C71585;
+
+//<!-- Red -->
+$red_Ruby: #E0115F;
+$red_Hibiscus: #B43757;
+$red_Desire: #EA3C53;
+$red_BrightCrimson: #DC143C;
+$red_Raspberry: #D21F3C;
+$red_Persian: #CA3433;
+$red_Imperial: #ED2939;
+$red_USFlag: #BF0A30;
+$Red: #FF0000;
+$red_Crimson: #B80F0A;
+$red_Ferrari: #FF2800;
+$red_Chilli: #C21807;
+$red_Scarlet: #FF2400;
+$red_Rust: #933A16;
+$red_Carmine: #960018;
+$red_Burgundy: #8D021F;
+$red_maroon: #800000;
+$red_Vermilion: #7E191B;
+$red_Barn: #7C0A02;
+$red_Dark: #580000;
+$red_Sangria: #5E1914;
+$red_Mahogany: #420D09;
+$red_FireBrick: #400000;
+$red_BlackLight0: #380000;
+$red_BlackLight1: #300000;
+$red_BlackLight2: #280000;
+$red_BlackLight3: #200000;
+$red_Black0: #180000;
+$red_Black1: #100000;
+$red_Black2: #080000;
+
+//<!-- Orange -->
+$orange_Dark: #170C00;
+$orange_DarkBrown: #2E1900;
+$orange_Brown: #452600;
+$orange_LightBrown0: #5C3200;
+$orange_LightBrown1: #733F00;
+$orange_Clay: #813F0B;
+$orange_Spice: #793802;
+$orange_AmberDark: #883000;
+$orange_Burnt: #964000;
+$orange_Rust: #B7410E;
+$orange_DarkRed: #FF4500;
+$orange_LightRed: #FF4B0D;
+$orange_Salamander: #F05E23;
+$orange_Ginger: #BE5504;
+$orange_Squash: #CB5C0D;
+$orange_SquashLight: #FF681F;
+$orange_BrightBrown0: #B96500;
+$orange_Bronze: #B1560F;
+$orange_BrightBrown1: #A25900;
+$orange_Cider: #B3672B;
+$orange_Tiger: #FD6A02;
+$orange_MangoTango1: #CC7000;
+$orange_Carrot: #EF7215;
+$orange_Original: #D07200;
+$orange_MangoTango0: #E77200;
+$orange_Pumpkin: #FF7417;
+$orange_Ochre: #CC7722;
+$orange_Sandstone: #D7722C;
+$orange_Royal: #F9812A;
+$orange_Apricot: #EF820D;
+$orange_Light: #FF8C00;
+$orange_NeonCarrot: #FF9933;
+$orange_Neutral0: #FFAB45;
+$orange_Outrageous: #FF6037;
+$orange_Tomato: #FF6347;
+$orange_Coral: #FF7F50;
+$orange_BurntLight: #FF7F49;
+$orange_Melon: #F79862;
+$orange_TangerineAtomic: #FF9966;
+$orange_TangerineLight2: #FFC297;
+$orange_TangerineLight1: #FFD4AB;
+$orange_TangerineWhite0: #ffe4c6;
+$orange_White: #FFF4E7;
+$orange_WhiteLight: #FFEAD0;
+$orange_Beige: #F5F5DC;
+$orange_WhiteBeige0: #FFDFB9;
+$orange_WhiteBeige1: #ffdbb5;
+$orange_WhiteBeige2: #FFD9AE;
+$orange_WhiteBeige3: #FFD8AF;
+$orange_WhiteBeige4: #FFD5A2;
+$orange_Light1: #FFCA8B;
+$orange_Light2: #FFC073;
+$orange_Light3: #FFB55F;
+$orange_Yellow0: #FFB24D;
+$orange_Yellow1: #FFAE3D;
+$orange_Yellow2: #FFA928;
+$Orange: #FFA02E;
+$orange_OriginalGold: #F9A602;
+$orange_Fire: #FDA00F;
+$orange_Honey: #EB9605;
+$orange_HoneyDark: #AD8803;
+
+
+//<!-- Yellow -->
+$yellow_Dark2: #F9A825;
+$yellow_Dark1: #FFB300;
+$yellow_Dark0: #FFC107;
+$Amber: #FFBF00;
+$yellow_Amber2: #FBC02D;
+$yellow_Amber1: #FFC400;
+$yellow_Amber0: #FFCA28;
+$yellow_sunGlow: #FFCC33;
+$yellow_GoldOrange0: #FFD700;
+$yellow_GoldOrange1: #FFD600;
+$yellow_GoldOrange2: #FDD835;
+$yellow_GoldOrange3: #FFD740;
+$yellow_GoldOrange4: #FFD54F;
+$yellow_DarkKhaki: #CCC54E;
+$yellow_LightKhaki3: #BDB76B;
+$yellow_LightKhaki2: #FFE57F;
+$yellow_LightKhaki1: #FFE082;
+$yellow_LightKhaki0: #FFECB3;
+$yellow_White0: #FFF8E1;
+$yellow_White1: #ffE9DA;
+$yellow_White2: #FFFDE7;
+$yellow_Light0: #FFFFE0;
+$yellow_Light1: #FFF9C4;
+$yellow_Light2: #FFFACD;
+$yellow_SpringGreen: #ECEBBD;
+$yellow_SpringGreenBeige: #F0F4C3;
+$orange_BannaMania: #FBE7B2;
+$yellow_Beige: #ffe29f;
+$yellow_Light3: #FFFF9F;
+$yellow_Light4: #FFFF99;
+$yellow_Khaki0: #F0E68C;
+$yellow_Khaki1: #FFF590;
+$yellow_Khaki2: #FFFF82;
+$yellow_Khaki3: #FFF176;
+$yellow_Bright0: #FFFF66;
+$yellow_Bright1: #FFEE58;
+$yellow_Bright2: #FFEB3B;
+$yellow_Bright3: #FFFF33;
+$yellow_Max: #FAFA37;
+$Yellow: #FFFF00;
+$yellow_Neon0: #FFFF00;
+$yellow_Middle: #FFEB00;
+$yellow_Neon1: #FFEA00;
+$yellow_Neon2: #CCCC00;
+
+//<!-- Green -->
+$green_yellow4: #C0CA33;
+$green_yellow3: #CDDC39;
+$green_yellow2: #EEFF41;
+$green_yellow1: #D4E157;
+$green_yellow0: #F4FF81;
+$green_LimeYellow1: #DCE775;
+$green_LimeYellow0: #E6EE9C;
+$green_LimeLight0: #CCFF90;
+$green_LimeLight1: #AED581;
+$green_LimeLight2: #9CCC65;
+$green_BrightLime0: #B2FF59;
+$green_BrightLime1: #8BC34A;
+$green_BrightLime2: #7CB342;
+$green_Pea: #78AB46;
+$green_PeaDark: #689F38;
+$green_Light0: #558B2F;
+$green_Light1: #458B00;
+$green_NeonDark: #5EB308;
+$green_NeonLight2: #66CD00;
+$green_NeonLight1: #76EE00;
+$green_NeonLight0: #7CFC00;
+$green_NeonYellow2: #A9D72F;
+$green_NeonYellow1: #AEEA00;
+$green_NeonYellow0: #C6FF00;
+$green_ElectricLime: #CCFF00;
+$green_ElectricNeon: #8FD400;
+$green_SpringFrost: #87FF2A;
+$green_Grass: #7FFF00;
+$green_Bright2: #83F52C;
+$green_Bright1: #76FF03;
+$green_Bright0: #64DD17;
+$green_ScreamingDark1: #00C853;
+$green_ScreamingDark0: #00E676;
+$green_ScreamingGreen: #66FF66;
+$green_Aqua: #69F0AE;
+$green_White: #B9F6CA;
+$green_LightAlgae: #A5D6A7;
+$green_BrightAlgae: #81C784;
+$green_AquaDark0: #66BB6A;
+$green_AquaDark1: #4CAF50;
+$green_AquaDark2: #43A047;
+$green_Bright4: #388E3C;
+$green_Bright5: #2E7D32;
+$Green: #1B5E20;
+$green_KapooDark: #33691E;
+$green_Kapoo: #4A7023;
+$green_FenwayGrass: #526F35;
+$green_RomaineLettuce: #3B5323;
+$green_DarkLettuceDark0: #2E3F1E;
+$green_DarkLettuceDark1: #29381B;
+
+//<!== ** Brick Color Pallets ** ==>
+$blue_Anchor: #3E424B;
+$brick_Ash: #544C4A;
+$brick_Seal: #818380;
+$brick_Trout: #97978F;
+$brick_Stone: #877F7D;
+$brick_Fossil: #787276;
+$brick_Mink: #88807B;
+$brick_Thunder: #BDB7AB;
+$brick_smoke: #BEBDB8;
+$brick_Rhino: #B9BBB6;
+$brick_Harbor_Gray: #C7C6C1;
+$brick_Abalone: #D6CFC7;
+
+
+//<!== ***  Paper Color Pallets ***  ==>
+//<!-- Black -->
+$paperBlack_0: #45403F;
+//<!-- Brown -->
+$paperBrown_0: #4B3D35;
+$paperBrown_1: #91886D;
+$paperBrown_Bronze: #5D4719;
+
+
+
+//<!-- Grey -->
+$paperGray_0: #9AA0A5;
+$paperGray_Tan: #AEAEA0;
+$paperGray_1: #C3C4BC;
+$paperGray_2: #B1B2B1;
+$paperGray_3: #C3C4BC;
+
+//<!-- White -->
+$paperWhite_0: #E3E3E0;
+
+
+//<!-- Blue Light -->
+$paperBlue_0: #D2DCEC;
+$paperBlue_1: #7B7B85;
+
+//<!-- Blue Dark -->
+$paperBlueDark_0: #242A35;
+$paperBlueDark_1: #2D2D35;
+$paperBlueDark_2: #4F5357;
+//<!-- Purple -->
+$paperPurple_0: #7F7389;
+$paperPurple_Eggplant: #614051;
+
+
+//<!-- Pink -->
+$paperPink_0: #BF969E;
+$paperPink_1: #B36C78;
+$paperPink_2: #DBA897;
+
+//<!-- Red -->
+$paperRed_0: #AA5452;
+$paperRed_1: #CB825E;
+$paperRed_2: #A76B56;
+
+
+//<!-- Orange -->
+$paperOrange_Peach: #DFC3A5;
+$paperOrange_OrangeDark: #B26C38;
+$paperOrange_0: #D08747;
+$paperOrange_1: #B89154;
+
+
+//<!-- Yellow -->
+$paperYellow_BeigeYellow: #C6C1B2;
+$paperYellow_Beige: #CAC9B6;
+$paperYellow_Bannana: #FFE898;
+
+
+
+//<!-- Green -->
+$paperGreen_WhiteLime: #C8E6C9;
+$paperGreen_White1: #E8F5E9;
+$paperGreen_White0: #F1F8E9;
+$paperGreen_grassWhite: #DCEDC8;
+$paperGreen_grassLightGreen: #CDE3B3;
+$paperGreen_grassBrightGreen: #C5E1A5;
+$paperGreen_cactusGreen1: #AEC596;
+$paperGreen_cactusGreen0: #A8BC95;
+$paperGreen_Murkey: #8D9F77;
+$paperGreen_cactusGreen: #717F61;
+$paperGreen_mudGreen: #5A6351;
+$paperGreen_mudGreenBright: #7E8A6F;
+$paperGreen_mudGreenLight: #8D9988;
+$paperGreen_MudGreenish: #9FB39F;
+$paperGreen_greyCyanWhite: #9FB2B3;
+$paperGreen_greyCyanLight: #8A9E9F;
+$paperGreen_greyCyan: #6E7F80;
+$paperGreen_greyCyanDark: #57696E;
+$paperGreen_outerSpaceLight0: #44595D;
+$paperGreen_outerSpaceLight1: #354346;
+$paperGreen_outerSpace: #2D383A;
+$paperGreen_outerSpaceDark: #FF2A3436;
+$paperGreen_outerSpaceDarkest: #252E30;
+$paperGreen_blueCharleston: #232B2B;
+$paperGreen_blueCharlestonLight: #B21E2627;
+$paperGreen_blueCharlestonDark: #FF222A2C;
+$paperGreen_Dark: #1D2425;
+$paperGreen_pureBlack: #B2131919;
+
+//</resources>

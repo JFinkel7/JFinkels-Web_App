@@ -1,0 +1,35 @@
+﻿// * Mixins *
+@mixin testBorder($color) {
+    border: 2px solid $color;
+}
+
+@mixin configBody_Weight_Height() {
+    max-width: 1200px;
+    min-width: 600px;
+    max-height: 900px;
+    min-height: 450px;
+}
+// SLIDE IN AT 3secs
+@mixin slideInFromRight() {
+    -moz-animation-duration: 3s;
+    -moz-animation-name: slidein;
+
+    @-moz-keyframes slidein {
+        from {
+            margin-left: 100%;
+            width: 300%
+        }
+
+        75% {
+            font-size: 300%;
+            margin-left: 25%;
+            width: 150%;
+        }
+
+        to {
+            margin-left: 0%;
+            width: 100%;
+        }
+    }
+}
+

@@ -1,0 +1,92 @@
+﻿/* SCSS Styles */
+@import '_Mixins.scss';
+@import '_Colors.scss';
+// <*** BODY ***>
+body {
+    @include configBody_Weight_Height();
+    margin: auto;
+}
+
+
+// <*** HEADER ***>
+header {
+    #header-container {
+        background: linear-gradient(to bottom right,$black_Charcoal,$black_Grey1);
+        border-top: $red_Vermilion groove 2px;
+        outline: none;
+
+        #header-title {
+            text-align: center;
+            font-family: 'Times New Roman';
+            font-size: 35px;
+            letter-spacing: 2px;
+            font-style: italic;
+            font-weight: 900;
+            color: $Snow;
+        }
+
+        #home-link {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 22px;
+            text-decoration: none;
+            color: $blue_AirForce;
+
+            &:hover {
+                color: aquamarine;
+            }
+        }
+    }
+}
+// END OF HEADER
+// <*** MAIN ***>
+main {
+    .section-container {
+        // Resume Header
+        margin: 5px;
+        font-size: 19px;
+        font-family: Calibri;
+
+
+        #github-link {
+            text-decoration: none;
+            color: inherit;
+
+            &:hover {
+                color: aquamarine;
+            }
+        }
+
+        #resume-header-container {
+            #title {
+                margin-top: -25px;
+                font-family: 'Times New Roman';
+                text-align: center;
+                font-size: 29px;
+                border-radius:2px;
+                border-left: $Black groove 2px;
+                border-right: $Black groove 2px;
+                border-bottom: $Black groove 2px;
+            }
+
+
+
+            #address-info {
+                float: left;
+                text-decoration: none;
+                color: inherit;
+
+                &:hover {
+                    color: aquamarine;
+                }
+            }
+
+            #contact-info {
+                text-decoration: none;
+                color: inherit;
+                float: right;
+            }
+        }
+    }
+    // END
+}
+// END OF MAIN

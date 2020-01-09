@@ -1,0 +1,80 @@
+/* SCSS Styles */
+/*<!-- Info:
+       0 Being The Lightest and >  Being The Darkest
+       4 color Tag Categories :
+       Dark , Light, Bright , White, Black
+-->*/
+body {
+  margin: auto;
+  padding: initial;
+  max-width: 1200px;
+  min-width: 600px;
+  max-height: 900px;
+  min-height: 450px;
+}
+
+header #header-container {
+  background: linear-gradient(to bottom right, #222021, #404040);
+  border-top: #7E191B groove 2px;
+  outline: none;
+}
+header #header-container #header-title {
+  text-align: center;
+  font-family: "Times New Roman";
+  font-size: 35px;
+  letter-spacing: 2px;
+  font-style: italic;
+  font-weight: 900;
+  color: #FFFAFA;
+}
+header #header-container a {
+  text-align: left;
+  text-decoration: none;
+  font-size: 20px;
+  color: #f0ffff;
+}
+header #header-container a:hover {
+  color: beige;
+  background-color: transparent;
+}
+
+main {
+  /* Style the button that is used to open and close the collapsible content */
+  /* Style the collapsible content. Note: hidden by default */
+}
+main .container {
+  position: relative;
+  bottom: -50px;
+  margin-top: 15px;
+  padding: 5px;
+  outline: none;
+}
+main .collapsible-section {
+  background: linear-gradient(to bottom right, #222021, #404040);
+  color: #f0ffff;
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  height: 125px;
+  border-radius: 3.5px;
+  outline: none;
+  border-top: none;
+  font-size: 25px;
+  border-top: #7E191B groove 3px;
+  text-align: center;
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), 
+      and when you move the mouse over it (hover) */
+}
+main .collapsible-section:active, main .collapsible-section hover {
+  background-color: #ccc;
+  color: #F5F5DC;
+}
+main .content {
+  font-size: 20px;
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+/*# sourceMappingURL=style.css.map */

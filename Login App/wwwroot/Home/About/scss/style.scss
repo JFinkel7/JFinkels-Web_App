@@ -1,0 +1,81 @@
+﻿/* SCSS Styles */
+@import '_Mixins.scss';
+@import '_Colors.scss';
+// BODY
+body {
+    margin: auto;
+    padding: initial;
+    @include configBody_Weight_Height();
+}
+// HEADER
+header {
+    #header-container {
+        background: linear-gradient(to bottom right,$black_Charcoal,$black_Grey1);
+        border-top: $red_Vermilion groove 2px;
+        outline: none;
+
+        #header-title {
+            text-align: center;
+            font-family: 'Times New Roman';
+            font-size: 35px;
+            letter-spacing: 2px;
+            font-style: italic;
+            font-weight: 900;
+            color: $Snow;
+        }
+
+     
+
+        a {
+            text-align: left;
+            text-decoration: none;
+            font-size: 20px;
+            color: $Azure;
+
+            &:hover {
+                color: beige;
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+// MAIN
+main {
+    .container {
+        position: relative;
+        bottom: -50px;
+        margin-top: 15px;
+        padding: 5px;
+        outline: none;
+    }
+    /* Style the button that is used to open and close the collapsible content */
+    .collapsible-section {
+        background: linear-gradient(to bottom right,$black_Charcoal,$black_Grey1);
+        color: $Azure;
+        cursor: pointer;
+        padding: 20px;
+        width: 100%;
+        height: 125px;
+        border-radius: 3.5px;
+        outline: none;
+        border-top: none;
+        font-size: 25px;
+        border-top: $red_Vermilion groove 3px;
+        text-align: center;
+        /* Add a background color to the button if it is clicked on (add the .active class with JS), 
+            and when you move the mouse over it (hover) */
+        &:active, hover {
+            background-color: #ccc;
+            color: $orange_Beige;
+        }
+    }
+    /* Style the collapsible content. Note: hidden by default */
+    .content {
+        font-size: 20px;
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #f1f1f1;
+    }
+}

@@ -1,0 +1,88 @@
+﻿/* SCSS Styles */
+@import '_Mixins.scss';
+@import '_Colors.scss';
+// <*** BODY ***>
+$lightenBlackCharcoal: lighten($black_Charcoal,20%);
+$darkenBlackCharcoal: darken($black_Charcoal,20%);
+
+body {
+    @include configBody_Weight_Height();
+    margin: auto;
+}
+
+
+// <*** HEADER ***>
+header {
+    #header-container {
+        background: linear-gradient(to bottom right,$black_Charcoal,$black_Grey1);
+        border-top: $red_Vermilion groove 2px;
+        outline: none;
+
+
+
+        #header-title {
+            text-align: center;
+            font-family: 'Times New Roman';
+            font-size: 35px;
+            letter-spacing: 2px;
+            font-style: italic;
+            font-weight: 900;
+            color: $Snow;
+        }
+
+        #home-link {
+            text-align: left;
+            text-decoration: none;
+            font-size: 20px;
+            color: $Azure;
+
+            &:hover {
+                color: beige;
+                background-color: transparent;
+            }
+        }
+    }
+}
+// END OF HEADER
+// <*** MAIN ***>
+main {
+
+
+    .container {
+        border: 5px ridge $black_Grey1;
+        background: linear-gradient(to bottom right,$lightenBlackCharcoal,$black_Grey1);
+        padding: 5px;
+        margin: 15px;
+        color: azure;
+        font-family: Arial;
+        font-size: 21px;
+        text-rendering: auto;
+        @include slideInStraightLeft;
+
+
+
+        #chapter_1-paragraph {
+            text-align: center;
+
+            &:hover {
+                @include animateLetterSpacing;
+            }
+        }
+
+        #chapter_2-paragraph {
+            text-align: center;
+
+            &:hover {
+                @include animateLetterSpacing;
+            }
+        }
+
+        #chapter_3-paragraph {
+            text-align: center;
+
+            &:hover {
+                @include animateLetterSpacing;
+            }
+        }
+    }
+}
