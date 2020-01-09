@@ -1,0 +1,46 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<html>
+<!--ADDED-->
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="content-type" content="text/html" />
+    <meta name="keywords" content="Home Page" />
+    <meta name="description" content="Main Home Page" />
+    <meta name="Developer" content="Denis J Finkel" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="~/Home/About/css/style.css">
+    <title>About</title>
+</head>
+<body>
+    <header>
+        <div id="header-container">
+            <h1 id="header-title">About Me</h1>
+            <a id="home-link" asp-action="Index">←Home</a>
+        </div>
+    </header>
+    <main>
+        <!-- ADD THE HTML CONTENT -->
+        <section class="container">
+            <button type="button" class="collapsible-section">Where I Was Born</button>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </section>
+
+
+        <section class="container">
+            <button type="button" class="collapsible-section">How I Came To America</button>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </section>
+        <section class="container">
+            <button type="button" class="collapsible-section">My Childhood</button>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </section>
+    </main>
+    <script src="~/Home/About/js/index.js"></script>
+</body>
+</html>
